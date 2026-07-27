@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Booking Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Booking</h1>
+    <input type="text" id="search" placeholder="Search destinations..." onkeyup="filterDestinations()">
+  </header>
+
+  <main id="destinations" class="destinations"></main>
+
+  <section class="booking">
+    <h2>Book Your Trip</h2>
+    <form onsubmit="submitBooking(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="date" id="departure" required>
+      <input type="date" id="return" required>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
